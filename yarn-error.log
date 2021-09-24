@@ -1,0 +1,58 @@
+Arguments: 
+  /Users/user/.nodebrew/node/v16.0.0/bin/node /Users/user/.nodebrew/current/bin/yarn install
+
+PATH: 
+  /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:/Users/user/.pyenv/shims:/Users/user/.pyenv/bin:/Users/user/.nodebrew/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/user/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.0.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/user/ReactProject/apollo-server-todo-app/package.json: Unexpected token n in JSON at position 4
+      at JSON.parse (<anonymous>)
+      at /Users/user/.nodebrew/node/v16.0.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/user/.nodebrew/node/v16.0.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/user/.nodebrew/node/v16.0.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    name: apollo-server-todo-app,
+    version: 1.0.0,
+    main: index.js,
+    license: MIT,
+    scripts: {
+      dev: ts-node-dev --respawn src/index.ts,
+      build: tsc -p tsconfig.json,
+      start: node dist/index.js,
+      format: prettier --write /Users/user/ReactProject/apollo-server-todo-app/src/**/*.{js,ts},
+      lint: eslint src/**/*.{js,ts},
+      clean: rm -rf dist
+    },
+    dependencies: {
+      apollo-server: ^3.1.1,
+      graphql: ^15.5.1
+    },
+    devDependencies: {
+      @typescript-eslint/eslint-plugin: ^4.28.5,
+      @typescript-eslint/parser: ^4.28.5,
+      eslint: ^7.32.0,
+      eslint-config-prettier: ^8.3.0,
+      prettier: ^2.3.2,
+      ts-node: ^10.1.0,
+      ts-node-dev: ^1.1.8,
+      typescript: ^4.3.5
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
