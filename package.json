@@ -10,7 +10,10 @@
     "format": "prettier --write $PWD/'src/**/*.{js,ts}'",
     "lint": "eslint 'src/**/*.{js,ts}'",
     "clean": "rm -rf dist",
-    "codegen": "graphql-codegen --config codegen.yml"
+    "graphql:codegen": "graphql-codegen --config codegen.yml",
+    "prisma:studio": "prisma studio",
+    "prisma:generate": "prisma generate",
+    "prisma:deploy": "prisma migrate deploy"
   },
   "dependencies": {
     "@graphql-tools/graphql-file-loader": "7.1.0",
@@ -18,7 +21,10 @@
     "@graphql-tools/schema": "8.2.0",
     "@prisma/client": "3.1.1",
     "apollo-server": "^3.1.1",
+    "dotenv": "10.0.0",
     "graphql": "^15.5.1",
+    "jwks-rsa": "2.0.4",
+    "node-fetch": "3.0.0",
     "prisma": "3.1.1"
   },
   "devDependencies": {
